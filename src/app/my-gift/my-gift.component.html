@@ -1,0 +1,8 @@
+<div class="container" *ngIf="gift$ | async as gift">
+
+    <figure>
+        <img src="{{gift.image}}" alt="texto alternativo">
+        <figcaption>{{gift.answer}}</figcaption>
+        <button (click)="changeGift()">Click Me</button>
+      </figure>
+</div>
